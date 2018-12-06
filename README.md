@@ -10,7 +10,7 @@ To set this application up on your local machine, you will need the following te
 
 The downlaod for python3 is system dependent. To download python 3: https://www.python.org/downloads/
 
-If you have not got pip (Python Installer Package), you will need to download it. The downlaod is system dependent, see the official 
+If you have not got pip (Python Installer Package), you will need to download it. The download is system dependent, see the official 
 documentation here: https://pip.pypa.io/en/stable/installing/
 
 Note:

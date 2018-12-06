@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <h3>My files</h3>
+  <a href="{% url 'upload' %}">Upload a new file</a>
+  <div class="container">
+  	<h4>My Files:</h4>
+  	{% if private_file %}
+  		{% for file in private_file %}
+  			<p><a href="">{{file.file.url}}</a>, {{file.time.date}}<p>
+  		{% endfor %}
+  	{% endif %}
+  </div>
+   <div class="container">
+   	<h4>Public Files</h4>
+   	{% if public_file %}
+  		{% for file in public_file %}
+  			<p><a href="">{{file.file}}</a>, {{file.time.date}}</p>
+  		{% endfor %}
+  	{% endif %}
+  </div>
+{% endblock %}

@@ -8,7 +8,7 @@ class FilesTest(TestCase):
  
 	def create_user(username='test', password='password'):
 		""" 
-		user field in Uplaod has a foreighkey relationship, thus we instatntiate User model first.
+		user field in Upload has a foreighkey relationship, thus we instantiate User model first.
 		Once a user is created, you need to either delete the user before running another test, 
 		or change username,otherwise the NOT_NULL constraint will fail.
 		"""
@@ -20,7 +20,7 @@ class FilesTest(TestCase):
 		return Upload.objects.create(private=private, file=file, user=user)
 
 	def test_file_creation(self):
-		""" Test Uplaod model, make sure it can be instantiated and create a model."""
+		""" Test Upload model, make sure it can be instantiated and create a model."""
 		test = self.create_file()
 		self.assertTrue(isinstance(test, Upload))
 

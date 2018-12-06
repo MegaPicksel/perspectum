@@ -40,7 +40,7 @@ In order to start the project:
 ------------------------------
 Python manage.py runserver
 
-To migrate database and set up and admin user:
+To migrate database and set up an admin user:
 ----------------------------------------------
 Python manage.py makemigrations
 python manage.py migrate
